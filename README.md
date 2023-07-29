@@ -25,7 +25,6 @@
   <ul>
       <li>HTML5 e CSS3 para a estruturação e estilização da página.</li>
       <li>JavaScript para interações e funcionalidades dinâmicas (caso aplicável).</li>
-        li>[Lista de bibliotecas ou frameworks utilizados, se houver.]</li>
     </ul>
 
   <h2>Contato</h2>
