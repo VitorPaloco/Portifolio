@@ -7,7 +7,7 @@
 <body>
   <h1>Meu Portfólio</h1>
 
-  <img src="PrintSite.jpg" alt="Imagem do Site">
+  <img src="PrintSite.png" alt="Imagem do Site">
 
   <h2>Descrição do Projeto</h2>
   <p>O projeto "Portfólio" é uma página web que apresenta meu portfólio pessoal, destacando minhas habilidades, projetos e experiências profissionais. É uma maneira de compartilhar meu trabalho e conhecimento com outras pessoas interessadas em conhecer mais sobre mim e minhas capacidades como desenvolvedor.</p>
