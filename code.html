@@ -5,44 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta charset="UTF-8">
-    
+    <script src="script.js"></script>
 </head>
 
 <html>
     <body>
-        <header class="header">
-            <a href="#" class="logo">Paloco.</a>
-            <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Projetos</a>
-                <a href="#">Portifólio</a>
-                <a href="#">Contato</a>
-            </nav>
-        </header>
-
-        <section class="home">
-            <div class="home-content">
-                <h1>Olá, eu sou Vitor Paloco</h1>
-                <h3>Desenvolvedor FullStack</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industry's 
-                standard is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industry's 
-                standard</p>
-                <div class="btn-box">
-                    <a href="#">Me contrate</a>
-                    <a href="#">Chat online</a>
+        <div class="all">
+            <header class="header">
+                <a href="#" class="logo">Paloco.</a>
+                <nav class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#Sobre">Sobre</a>
+                    <a href="#Projetos">Projetos</a>
+                    <a href="#Contato">Contato</a>
+                </nav>
+            </header>
+    
+            <section class="home">
+                <div class="home-content">
+                    <h1>Olá, eu sou Vitor Paloco</h1>
+                    <h3>Desenvolvedor FullStack</h3>
+                    <p>Vitor Paloco: Desenvolvedor fullstack apaixonado por criar soluções inovadoras. 
+                        Habilidoso em front-end, back-end e entrega resultados excepcionais. 
+                        Sempre buscando superar desafios com criatividade e eficiência.</p>
+    
+                    <div class="btn-box">
+                        <a href="#" id="openContate">Me contate</a>
+                        <a href="#Portifolio">Portifólio</a>
+                    </div>
                 </div>
-            </div>
+           
+                <div class="home-sci">
+                    <a href="https://www.instagram.com/vitorpalloco/" target="_blank"> <i class='bx bxl-instagram'></i> </a>
+                    <a href="https://twitter.com/VitorPalloco" target="_blank"> <i class='bx bxl-twitter'></i> </a>
+                    <a href="https://www.linkedin.com/in/vitor-hugo-oliveira-paloco-b64126278/" target="_blank"> <i class='bx bxl-linkedin' ></i> </a>
+                    <a href="https://github.com/VitorPaloco" target="_blank"> <i class='bx bxl-github'></i> </a>
+                </div>
+    
+                <div class="wrapper">
+                    <div class="wrapper-content">
+                        <div class="icon-close">
+                            <i class='bx bxs-x-square'></i>
+                        </div>
+                        <form action="#">
+                            <h1>Me contate</h1>
+                            <div class="input-box">
+                                <input type="text" placeholder="Nome completo" required>
+                                <i class="bx bxs-user"></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" placeholder="Email" required>
+                                <i class='bx bxs-envelope'></i>
+                            </div>
+                            <button type="submit" class="login-btn">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
-            <div class="home-sci">
-                <a href="https://www.instagram.com/vitorpalloco/"> <i class='bx bxl-instagram'></i> </a>
-                <a href="https://twitter.com/VitorPalloco"> <i class='bx bxl-twitter'></i> </a>
-                <a href="https://www.linkedin.com/in/vitor-hugo-oliveira-paloco-b64126278/"> <i class='bx bxl-linkedin' ></i> </a>
 
+            <section class="sobre" id="Sobre">
+                <div class="circle">
+                    <img src="assets\myImage.jpg" alt="Your Image" class="myImage">
+                </div>
+                <div class="texto">
+                    <h1>SOBRE MIM</h1>
+                    <br>
+                    <ul style="list-style-type:none;">
+                        <li> <strong style="color:#00abf0;"> Nome: </strong> Vitor Hugo Oliveira Paloco </li>
+                        <li> <strong style="color:#00abf0;"> Idade: </strong> 18 anos </li>
+                        <li> <strong style="color:#00abf0;"> Cidade: </strong> Londrina - Paraná </li>
+                        <li> <strong style="color:#00abf0;"> Faculdade: </strong> Engenharia de Software - UniFil </li>
+                    </ul>
+                    <br>
+                    <ul style="list-style-type:none;">
+                        <li> <strong style="color:#00abf0; font-size: 29px;"> Hobbies: </strong> </li>
+                        <br>
+                        <li> <strong> Programação: </strong> Apaixonado por criação e desenvolvimento de software </li>
+                        <li> <strong> Futebol: </strong> Sempre atento às últimas notícias do mundo da bola </li>
+                        <li> <strong> Jogos Online: </strong> Gosta de superar desafios com jogos competitivos </li>
+                </div>
+            </section>
+
+            <section class="projetos" id="Projetos">
+                <div class="projetos-titulo">
+                    <h1>PROJETOS</h1>
+                </div>
+                <div class="projetos-content">
+                    <div class="projetos-box">
+                        <img src="assets/port1.png" alt="Cash4Trash">
+                        <div class="projetos-layer">
+                            <h2> Cash4Trash </h2>
+                            <p> Cash4Trash é um projeto inovador que visa...</p>
+                            <a href="#"> <i class='bx bx-link-external'></i> </a>
+                        </div>
+                    </div>
+                    <div class="projetos-box">
+                        <img src="assets/port2.png" alt="Cash4Trash">
+                        <div class="projetos-layer">
+                            <h2> PaoLoko </h2>
+                            <p> PaoLoko é um aplicativo de entrega de alimentos...</p>
+                            <a href="#"> <i class='bx bx-link-external'></i> </a>
+                        </div>
+                    </div>
+                    <div class="projetos-box">
+                        <img src="assets/port3.png" alt="Cash4Trash">
+                        <div class="projetos-layer">
+                            <h2> Rota Inteligente </h2>
+                            <p> Rota Inteligente é um sistema de otimização...</p>
+                            <a href="#"> <i class='bx bx-link-external'></i> </a>
+                        </div>
+                    </div>
+                    <div class="projetos-box">
+                        <img src="assets/port4.png" alt="Cash4Trash">
+                        <div class="projetos-layer">
+                            <h2> StockTrack </h2>
+                            <p> StockTrack é uma ferramenta avançada de gerenciamento...</p>
+                            <a href="#"> <i class='bx bx-link-external'></i> </a>
+                        </div>
+                    </div>
+                    <div class="projetos-box">
+                        <img src="assets/port5.png" alt="Cash4Trash">
+                        <div class="projetos-layer">
+                            <h2> Em andamento </h2>
+                            <p> Este projeto está sendo desenvolvido...</p>
+                            <a href="#"> <i class='bx bx-link-external'></i> </a>
+                        </div>
+                    </div>
+                    <div class="projetos-box">
+                        <img src="assets/port6.png" alt="Cash4Trash">
+                        <div class="projetos-layer">
+                            <h2> Em andamento </h2>
+                            <p> Este projeto está sendo desenvolvido...</p>
+                            <a href="#"> <i class='bx bx-link-external'></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+       
+       
+        <footer class="footer" id="Contato">
+            <div class="footer-logo">Paloco.</div>
+            <div class="footer-info">© 2023 Empresa Paloco. Todos os direitos reservados.</div>
+            <div class="footer-info">
+                <p>Telefone: (43) 98456-0397</p>
+                <p>Email: palocovitor@gmail.com</p>
+                <p>Endereço: Rua Cacilios Dromet, Número 123</p>
             </div>
-        </section>
+            <div class="scroll-top">
+                <a href="#top" id="scroll-top-button"><i class='bx bx-up-arrow-circle'></i></a>
+            </div>
+        </footer>
 
 
     </body>
+
+
+
+    
