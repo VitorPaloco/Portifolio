@@ -6,7 +6,6 @@ Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvid
 
 - **Astro** — Framework moderno para sites rápidos e otimizados
 - **Tailwind CSS** — Estilização utilitária e responsiva
-- **JavaScript / TypeScript** *(se aplicável)*
 - **HTML5 / CSS3**
 
 ## 🎯 Objetivo do Projeto
