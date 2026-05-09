@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Assistente de TI",
+    "subtitle": "Apetit Soluções em Alimentação",
+    "startDate": "2026-07",
+    "endDate": "",
+    "description": "Atuação no desenvolvimento de projetos internos utilizando soluções low-code, com maior aprofundamento em implementações com Python e PHP. Também participo de demandas voltadas à infraestrutura e DevOps, incluindo implementação de sistemas open-source, entendimento de arquitetura de servidores e práticas relacionadas à segurança e sustentação de ambientes.",
+    "skills": ["Python", "N8N", "Low-Code", "SAP", "SQL", "Helpdesk"],
+    "images": ["works/apetit.png"],
+    "link": "https://apetit.com.br"
+  },
+  {
+    "title": "Projeto de Estágio e Desenvolvimento",
+    "subtitle": "UniFil - Universidade Filadélfia",
+    "startDate": "2025-01",
+    "endDate": "2025-12",
+    "description": "Projeto de desenvolvimento com duração de um ano envolvendo todas as etapas de construção de um sistema acadêmico para gestão de cronogramas e aulas do curso de Computação. O trabalho contemplou levantamento de requisitos, documentação, modelagem UML, desenvolvimento backend e frontend, além da integração completa da aplicação.",
+    "skills": ["Laravel", "PHP", "Vue.js", "PostgreSQL", "UML"],
+    "images": ["works/unifil.png"],
+    "link": "https://unifil.br"
+  },
+  {
+    "title": "Auxiliar de TI",
+    "subtitle": "Apetit Soluções em Alimentação",
+    "startDate": "2025-07",
+    "endDate": "2026-06",
+    "description": "Atuação direta na área de TI, conciliando suporte técnico e desenvolvimento interno. Nesse período, participei de atendimentos de Help Desk enquanto dava continuidade à construção de soluções com low-code, SAP e automações, agora com foco exclusivo nas demandas estratégicas da área de tecnologia.",
+    "skills": ["Helpdesk", "GLPI", "N1 & N2", "Low-Code", "N8N"],
+    "images": ["works/apetit.png"],
+    "link": "https://apetit.com.br"
+  },
+  {
+    "title": "Jovem Aprendiz - Projetos",
+    "subtitle": "Apetit Soluções em Alimentação",
+    "startDate": "2024-03",
+    "endDate": "2025-06",
+    "description": "Período de formação prática voltado ao aprendizado da estrutura tecnológica da empresa, com foco em ferramentas low-code, integração com SAP e manipulação de dados em SQL. Atuei no desenvolvimento de projetos internos que contribuíram para a automação de processos e otimização operacional.",
+    "skills": ["Python", "N8N", "Corteza Project", "Low-Code", "SAP", "SQL"],
+    "images": ["works/apetit.png"],
+    "link": "https://apetit.com.br"
+  }
+]

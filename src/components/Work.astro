@@ -1,0 +1,102 @@
+---
+import workData from "../data/work.json";
+
+function formatPeriod(startDate, endDate) {
+  function format(dateString) {
+    if (!dateString) return "Atual";
+
+    const [year, month] = dateString.split("-");
+    return `${month}/${year}`;
+  }
+
+  return `${format(startDate)} - ${format(endDate)}`;
+}
+---
+
+<section id="work" class="pt-16 px-4">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="mb-16 flex justify-center items-center">
+      <h2 class="text-4xl font-bold text-[var(--foreground)]">
+        Experiência
+      </h2>
+    </div>
+
+    <div class="relative">
+      {
+        workData.map((work, index) => (
+          <div class="relative pl-24 pb-14">
+
+            {
+              index !== workData.length - 1 && (
+                <div
+                  class="absolute left-[31px] top-16 w-[2px] h-full bg-[var(--border)]"
+                ></div>
+              )
+            }
+
+            <div
+              class="absolute left-0 top-0 w-16 h-16 rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--card)]"
+            >
+              <img
+                src={work.images[0]}
+                alt={work.title}
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div>
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                <div>
+                  <h3 class="text-2xl font-semibold text-[var(--foreground)]">
+                    {work.title}
+                  </h3>
+
+                  <p class="text-[var(--primary)] font-medium text-lg">
+                    {work.subtitle}
+                  </p>
+                </div>
+
+                <p class="text-sm text-[var(--muted-foreground)] whitespace-nowrap">
+                  {formatPeriod(work.startDate, work.endDate)}
+                </p>
+              </div>
+
+              <p class="mt-5 text-[var(--muted-foreground)] leading-relaxed text-justify mr-6 md:mr-0 md:max-w-6xl">
+                {work.description}
+              </p>
+
+              {
+                work.skills && (
+                  <div class="flex flex-wrap gap-2 mt-5 mr-2 md:mr-0">
+                    {
+                      work.skills.map((skill: string) => (
+                        <span class="px-3 py-1 rounded-lg text-xs border border-[var(--border)] bg-[var(--secondary)] text-[var(--primary)]">
+                          {skill}
+                        </span>
+                      ))
+                    }
+                  </div>
+                )
+              }
+
+              {
+                work.link && (
+                  <div class="mt-6">
+                    <a
+                      href={work.link}
+                      target="_blank"
+                      class="text-[var(--primary)] hover:opacity-80 transition"
+                    >
+                      Ver empresa
+                    </a>
+                  </div>
+                )
+              }
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

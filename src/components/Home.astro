@@ -1,0 +1,70 @@
+---
+import Languages from "@components/Languages.astro";
+import About from "@components/About.astro";
+---
+
+<section class="relative overflow-hidden text-[var(--foreground)] pt-12 md:pt-0" id="home">
+   <!-- Background blobs -->
+  <div class="absolute inset-0 z-0 pointer-events-none overflow">
+    <div class="blob top-100 -left-20 bg-[var(--primary)] md:top-30"></div>
+    <div class="blob top-60 right-0 bg-[var(--primary)] hidden md:block"></div>
+    <div class="blob bottom-10 left-50 bg-[var(--primary)]"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 sm:px-6 md:px-12 space-y-8 md:pt-40 pb-12">
+    <div class="text-left space-y-4">
+      <p class="text-md md:text-lg text-[var(--muted-foreground)]">
+        Vitor Hugo Oliveira Paloco
+      </p>
+
+      <div
+        class="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-8 md:gap-4"
+      >
+        <h1
+          class="text-[var(--foreground)] text-5xl md:text-6xl font-medium text-pretty leading-none"
+        >
+          Desenvolvedor <br /> Backend
+        </h1>
+
+        <p class="text-md md:text-2xl text-[var(--muted-foreground)] text-justify">
+          Desenvolvendo soluções robustas e escaláveis com foco em
+          <span class="text-[var(--primary)] font-medium"> backend</span>,
+          automação de processos e integração de sistemas.
+        </p>
+      </div>
+
+      <div class="flex justify-start gap-2 pt-3 md:pt-6">
+        <a
+          target="_blank"
+          href="https://github.com/VitorPaloco"
+          class="group transition duration-300 border border-[var(--border)] p-3 rounded-xl bg-[var(--card)] hover:bg-[var(--primary)]"
+        >
+          <div
+            class="size-8 bg-[var(--foreground)] group-hover:bg-white"
+            style="mask: url('/svg/github.svg') no-repeat center; mask-size: contain;"
+          >
+          </div>
+        </a>
+
+        <a
+          target="_blank"
+          href="https://linkedin.com/in/vitor-paloco"
+          aria-label="LinkedIn"
+          class="group transition duration-300 border border-[var(--border)] p-3 rounded-xl bg-[var(--card)] hover:bg-[var(--primary)]"
+        >
+          <div
+            class="size-8 bg-[var(--foreground)] group-hover:bg-white"
+            style="mask: url('/svg/linkedin.svg') no-repeat center; mask-size: contain;"
+          >
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <Languages />
+  </div>
+
+  <About />
+</section>
+
+

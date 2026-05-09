@@ -1,0 +1,31 @@
+---
+const currentYear = new Date().getFullYear();
+
+const socialLinks = [
+  { name: "LinkedIn", href: "https://linkedin.com/in/vitor-paloco", icon: "/svg/linkedin.svg" },
+  { name: "GitHub", href: "https://github.com/VitorPaloco", icon: "/svg/github.svg" },
+];
+---
+
+<footer class="bg-[var(--secondary)] border-t border-[var(--border)] mt-16">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <p class="text-sm text-[var(--muted-foreground)] order-2 md:order-1">
+        &copy; {currentYear} Vitor Paloco. Todos os direitos reservados.
+      </p>
+
+      <div class="flex space-x-6 order-1 md:order-2">
+        {
+          socialLinks.map((link) => (
+            <a href={link.href} aria-label={link.name} target="_blank" class="group transition">
+              <div
+                class="size-6 bg-[var(--muted-foreground)] group-hover:bg-[var(--primary)] transition-colors duration-200"
+                style={`mask: url('${link.icon}') no-repeat center; mask-size: contain; -webkit-mask: url('${link.icon}') no-repeat center; -webkit-mask-size: contain;`}
+              />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Pós-Graduação em Cybersegurança",
+    "subtitle": "Universidade Federal de Tecnologia do Paraná (UTFPR)",
+    "startDate": "2027-01",
+    "endDate": "2028-12",
+    "images": "works/utfpr.png"
+  },
+  {
+    "title": "Bacharelado em Engenharia de Software",
+    "subtitle": "UniFil - Centro Universitário Filadélfia",
+    "startDate": "2023-01",
+    "endDate": "2026-12",
+    "images": "works/unifil.png"
+  },
+  {
+    "title": "Ensino Médio",
+    "subtitle": "Colégio Anglo Londrinense",
+    "startDate": "2020-01",
+    "endDate": "2022-12",
+    "images": "works/anglo.png"
+  }
+]

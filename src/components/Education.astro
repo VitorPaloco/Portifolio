@@ -1,0 +1,68 @@
+---
+import educationData from "../data/education.json";
+
+function formatPeriod(startDate, endDate) {
+  function format(dateString) {
+    if (!dateString) return "Atual";
+
+    const [year, month] = dateString.split("-");
+    return `${month}/${year}`;
+  }
+
+  return `${format(startDate)} - ${format(endDate)}`;
+}
+---
+
+<section id="education" class="py-8 px-8">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="mb-12 flex justify-center">
+      <h2 class="text-4xl font-bold text-[var(--foreground)]">
+        Educação
+      </h2>
+    </div>
+
+    <div
+      class="overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)]"
+    >
+      {
+        educationData.map((education, index) => (
+          <div
+            class={`flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-6 ${
+              index !== educationData.length - 1
+                ? "border-b border-[var(--border)]"
+                : ""
+            }`}
+          >
+            <div class="flex items-center gap-4">
+
+              <div
+                class="w-14 h-14 rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--secondary)] shrink-0"
+              >
+                <img
+                  src={education.images}
+                  alt={education.title}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <div>
+                <h3 class="text-xl font-semibold text-[var(--foreground)] leading-tight">
+                  {education.title}
+                </h3>
+
+                <p class="text-[var(--primary)] font-medium">
+                  {education.subtitle}
+                </p>
+              </div>
+            </div>
+
+            <p class="text-sm text-[var(--muted-foreground)] whitespace-nowrap md:text-right">
+              {formatPeriod(education.startDate, education.endDate)}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

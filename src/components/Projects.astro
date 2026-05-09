@@ -1,0 +1,18 @@
+---
+import ProjectCard from "./project-card.astro";
+import projectsData from "../data/projects.json";
+---
+
+<section id="projects" class="bg-[var(--secondary)]">
+  <div class="max-w-6xl mx-auto py-16 px-6">
+    <div class="mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] flex items-center gap-4 justify-center">
+        Meus Projetos
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projectsData.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </div>
+</section>

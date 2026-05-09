@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Portifólio de Carreira - Astro & Tailwind",
+    "description": "Um portfólio de carreira moderno e responsivo, construído com Astro e Tailwind CSS, para destacar habilidades e experiências profissionais.",
+    "images": ["img1.png"],
+    "tech": ["Astro", "Tailwind"],
+    "platforms": ["web"],
+    "link": "https://github.com/VitorPaloco/Portifolio",
+    "category": "Published Website"
+  },
+  {
+    "title": "Servidor Caseiro - Proxmox",
+    "description": "Configuração de um servidor caseiro utilizando Proxmox para virtualização, permitindo a execução de múltiplos sistemas operacionais e serviços em um ambiente doméstico.",
+    "images": ["img2.png"],
+    "tech": ["Proxmox", "Virtualização", "Linux", "Docker"],
+    "platforms": ["linux"],
+    "link": "",
+    "category": "Hobby"
+  },
+  {
+    "title": "Delainventory - GLPI",
+    "description": "Plugin do GPLI 11 para a implementação de funcionaldiades ausentes no ambiente de Helpdesk da Apetit",
+    "images": ["img3.png"],
+    "tech": ["PHP", "Helpdesk", "GLPI"],
+    "platforms": ["helpdesk-service"],
+    "link": "",
+    "category": "Apetit"
+  }
+]
