@@ -4,19 +4,62 @@ import Navbar from "@components/Navbar.astro";
 import Footer from "@components/Footer.astro";
 
 const {
-  title = "Vitor Paloco",
-  description = "Conheça um pouco sobre mim e a minha jornada",
+  title = "Vitor Paloco | Desenvolvedor Backend & Soluções Web",
+  description = "Portfólio oficial de Vitor Paloco. Desenvolvedor Backend com experiência em automação Low-Code, sistemas web, banco de dados e soluções modernas.",
 } = Astro.props;
+
+const siteUrl = "https://vitorpaloco.com";
+const imageUrl = `${siteUrl}/preview.png`;
 ---
 
 <html lang="pt-br">
   <head>
+    <!-- Básico -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="author" content="Vitor Paloco" />
+    <meta name="robots" content="index, follow" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={siteUrl} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/svg/favicon.svg" />
+
+    <!-- Title -->
     <title>{title}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content="Vitor Paloco | Desenvolvedor Backend" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vitor Paloco",
+        "url": "https://vitorpaloco.com",
+        "jobTitle": "Desenvolvedor Backend",
+        "sameAs": [
+          "https://github.com/VitorPaloco",
+          "https://www.linkedin.com/in/vitor-paloco"
+        ]
+      }
+    </script>
   </head>
 
   <body class="min-h-screen flex flex-col">
