@@ -6,7 +6,7 @@
     "tech": ["Astro", "Tailwind"],
     "platforms": ["web"],
     "link": "https://github.com/VitorPaloco/Portifolio",
-    "category": "Published Website"
+    "category": "Website"
   },
   {
     "title": "Servidor Caseiro - Proxmox",
@@ -16,6 +16,15 @@
     "platforms": ["linux"],
     "link": "",
     "category": "Hobby"
+  },
+  {
+    "title": "Planner UniFil",
+    "description": "Projeto de Estágio desenvolvido oferecendo um sistema interno de organização e controle de horários dos cursos de computação.",
+    "images": ["img4.png"],
+    "tech": ["PHP", "Laravel", "VueJS"],
+    "platforms": ["web"],
+    "link": "https://github.com/VitorPaloco/Planner-UniFil",
+    "category": "Projeto"
   },
   {
     "title": "Delainventory - GLPI",
